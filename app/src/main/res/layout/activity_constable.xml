@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBDD9F"
+
+    tools:context=".Constable">
+
+    <TextView
+        android:id="@+id/WelcomeConstable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:background="#EBDD9F"
+        android:fontFamily="@font/lato_light"
+        android:text="Welcome!"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/beatwise"
+        style="@android:style/Widget.Holo.Light.Button"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="#EBDD9F"
+        android:fontFamily="@font/lato_light"
+        android:text="BEAT CHECK"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WelcomeConstable" />
+
+    <Button
+        android:id="@+id/report"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#EBDD9F"
+        android:fontFamily="@font/lato_light"
+        android:textSize="20dp"
+        android:text="REPORT"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/beatwise" />
+
+    <Button
+        android:id="@+id/sheeters"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        app:strokeColor="#DBBB6C"
+        app:strokeWidth="2dp"
+        android:layout_marginTop="24dp"
+        android:background="#EBDD9F"
+        android:fontFamily="@font/lato_light"
+        android:text="SHEETERS"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/report" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="65dp"
+        android:scaleType="fitXY"
+        android:layout_height="65dp"
+        android:background="#DBBB6C"
+        android:visibility="invisible"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginBottom="188dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        style="@android:style/Widget.Material.Light.ImageButton"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="188dp"
+        android:background="#DBBB6C"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+    <Button
+        android:id="@+id/buttonEmeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="40dp"
+        android:background="#ff471a"
+        android:text="           Emergency          "
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sheeters"
+        app:layout_constraintVertical_bias="0.953" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
